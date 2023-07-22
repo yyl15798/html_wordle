@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+    overflow:hidden;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 6rem 1fr auto;
+}
+
+.game-header{
+    padding:  0rem 1rem;
+    display: grid;
+    grid-template-columns: 12rem 1fr ;
+    align-items: center;
+}
+
+.game-header .title{
+    justify-self: center;
+}
+
+.game-header .action{
+    display: grid;
+    grid-auto-flow: column ;
+    justify-self: end ;
+    grid-gap: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover,.btn-default.focus, .btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.game-body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.game-body .guess-container{
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+}
+
+.game-body .guess-container .guess-row{
+    display: grid;
+    grid-auto-flow:column;
+    grid-gap: 1rem;
+}
+
+.game-body .guess-container .guess-row .guess-title{
+    height: 6.2rem;
+    width: 6.2rem;
+    border: 0.2rem solid #d3d6da;
+    font-size: 3.2rem;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.game-footer{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 5rem 5rem 5rem;
+    grid-gap: 0.5rem;
+    justify-items: center;
+}
+
+.game-footer .keyrow{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: minmax(3.8rem,min-content);
+    grid-gap: 0.5rem;  
+}
